@@ -16,7 +16,7 @@ pub struct Scene<D: TraitSceneData> {
 
 impl<D: TraitSceneData> Scene<D> {
     pub fn initialize(&mut self, name: &str) {
-        self.name.from(name);
+        self.name.from_string(name);
         self.data.initialize();
     }
     pub fn activate(&mut self) {
